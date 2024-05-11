@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+
+.myButton2 {
+	-moz-box-shadow: 0px 0px 15px -1px #695302;
+	-webkit-box-shadow: 0px 0px 15px -1px #695302;
+	box-shadow: 0px 0px 15px -1px #695302;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #ff0000));
+	background:-moz-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-webkit-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-o-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-ms-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:linear-gradient(to bottom, #ff0000 5%, #ff0000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff0000',GradientType=0);
+	background-color:#ff0000;
+	border:1px solid #ebbb1d;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	padding:1px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff0000;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #ff0000));
+	background:-moz-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-webkit-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-o-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-ms-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:linear-gradient(to bottom, #ff0000 5%, #ff0000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff0000',GradientType=0);
+	background-color:#ff0000;
+}.myButton2:active {
+	position:relative;
+	top:1px;
+}
+.myButton {
+	-moz-box-shadow: 0px 0px 3px -1px #695302;
+	-webkit-box-shadow: 0px 0px 3px -1px #695302;
+	box-shadow: 0px 0px 3px -1px #695302;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd640), color-stop(1, #ffd640));
+	background:-moz-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-webkit-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-o-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-ms-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:linear-gradient(to bottom, #ffd640 5%, #ffd640 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd640', endColorstr='#ffd640',GradientType=0);
+	background-color:#ffd640;
+	border:1px solid #ebbb1d;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	padding:1px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffd640;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd640), color-stop(1, #ffd640));
+	background:-moz-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-webkit-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-o-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-ms-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:linear-gradient(to bottom, #ffd640 5%, #ffd640 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd640', endColorstr='#ffd640',GradientType=0);
+	background-color:#ffd640;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="RYE - Expert Class">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crush With Us</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../scripts/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../scripts/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../scripts/favicon-16x16.png">
+
+      <!-- Schema.org markup for Google+ -->
+      <meta itemprop="name" content="CrushWithUs">
+      <meta itemprop="description" content="Range Viewer powered by RYE">
+      <meta itemprop="image" content="../scripts/CrushWithUs.png">
+
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="../scripts/CrushWithUs.png">
+      <meta name="twitter:site" content="@CrushWithRYE">
+      <meta name="twitter:title" content="Crush With Us">
+      <meta name="twitter:description" content="Range Viewer powered by RYE">
+      <meta name="twitter:creator" content="@CrushWithRYE">
+      <!-- Twitter summary card with large image must be at least 280x150px -->
+      <meta name="twitter:image:src" content="../scripts/CrushWithUs.png">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Crush With Us">
+      <meta property="og:type" content="article">
+      <meta property="og:url" content="#">
+      <meta property="og:image" content="../scripts/CrushWithUs.png">
+      <meta property="og:description" content="Range Viewer powered by RYE">
+      <meta property="og:site_name" content="Raise Your Edge">
+
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+      <!-- Web Application Manifest -->
+    <link rel="manifest" href="../scripts/manifest.json">
+
+    <!-- Add to home screen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Crush With Us">
+    <meta name="theme-color" content="#303F9F">
+    <link rel="icon" type="image/png" sizes="192x192" href="scripts/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="scripts/android-icon-128x128.png">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Raise Your Edge">
+      <link rel="apple-touch-icon" sizes="57x57" href="../scripts/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="../scripts/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../scripts/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="../scripts/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="../scripts/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="../scripts/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="../scripts/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="../scripts/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="../scripts/apple-icon-180x180.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff9800">
+
+    <!-- Tile icon for Win8 -->
+      <meta name="msapplication-TileColor" content="#ff9800">
+      <meta name="msapplication-TileImage" content="../scripts/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ff9800">
+      <!-- Firebase UI -->
+      <link type="text/css" rel="stylesheet" href="../scripts/firebaseui.css">
+
+  <!-- Material Design Lite  -->
+  <link rel="stylesheet" href="../scripts/material.min.css">
+  <script defer="" src="../scripts/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- SweetAlert -->
+    <script src="../sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../scripts/sweetalert.css">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth:700">
+  <link rel="stylesheet" href="../scripts/material.orange-amber.min.css">
+
+  <link rel="stylesheet" href="../scripts/viewer.css">
+
+  </head>
+  <body>
+<!-- Splash screen -->
+    <div class="mdl-layout__container"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer has-drawer is-upgraded" data-upgraded=",MaterialLayout">
+
+      <div class="android-header mdl-layout__header is-casting-shadow"><div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div>
+
+        <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">
+        <img src="../scripts/rye_black.png" height="35px">
+      </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+            </nav>
+          </div>
+
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons">keyboard_arrow_down</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(28px, 23px);"></span></span></button>
+          <div class="mdl-menu__container is-upgraded" style="right: 40px; top: 48px; width: 228.859px; height: 64px;"><div class="mdl-menu__outline mdl-menu--bottom-right" style="width: 228.859px; height: 64px;"></div><ul id="viewerSelect" class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="more-button" data-upgraded=",MaterialMenu,MaterialRipple" style="clip: rect(0px, 228.859px, 0px, 228.859px);"><li id="-L1Scg5OwqRQYBckli2W" class="selectViewer mdl-menu__item" style="">Tournament Masterclass Expert</li></ul></div>
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer" aria-hidden="true">
+         <nav class="mdl-navigation">
+           <span class="mdl-navigation__link viewerTitle">Tournament Masterclass Expert</span>
+           <span class="range-nav">
+		   <div class="mdl-accordion">
+		   <a href="OP-100BB-MENU.html" class="mdl-navigation__link mdl-accordion__button rangeTitle">
+		   <em class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</em>Openraising</a>
+           </div>
+		   <div class="mdl-accordion">
+		   <a href="F3B-menu-100bb.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Flatting &amp; 3Betting</a>
+</div>
+
+		   <div class="mdl-accordion">
+		   <a href="RE-menu-sbvs.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Rejamming</a>
+	</div>
+		   <div class="mdl-accordion">
+		   <a href="CALLRE-menu-buvs.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Calling Rejams</a>
+		  </div>
+
+<div class="mdl-accordion">
+		    <a href="RESHOVING-menu.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Reshoving</a>
+		</div>
+		    <div class="mdl-accordion">
+		   <a href="OPENSHOVING-menu.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Openshoving</a>
+		</div>
+		   <div class="mdl-accordion">
+		   <a href="BBSTR-menu-vssblimp.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>BB Strategy</a>
+		</div>
+		 
+		   <div class="mdl-accordion">
+		   <a href="HU-menu-menos25bbdosb.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>HU</a>
+		  </div>
+		   <div class="mdl-accordion">
+		   <a href="SQU-menu-squezing40bbmais.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Squeezing</a>
+		  </div>
+		   
+		   <div class="mdl-accordion">
+		   <a href="MUL-menu-100BB.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Multiway</a>
+		   </div>
+			 <div class="mdl-accordion mdl-accordion--opened">
+		   <a href="ICM.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>ICM Ranges</a>
+		  <div class="mdl-accordion__content-wrapper">
+		    <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -336px;">
+		   <a href="ICM1.html" class="postSelect mdl-navigation__link">Coldcalling & 3Betting - UTG-20bb HJ-45bb CO-60bb BU-35bb SB-18bb BB-75bb</a>
+		   <a href="ICM2.html" class="postSelect mdl-navigation__link"> Openraising - UTG-30bb HJ-45bb CO-60bb BU-75bb SB-18bb BB-22bb</a>
+		    <a href="ICM3.html" class="postSelect mdl-navigation__link">Coldcalling & 3Betting - UTG-30bb HJ-45bb CO-60bb BU-75bb SB-18bb BB-20bb</a>
+		   <a href="ICM4.html" class="postSelect mdl-navigation__link">Openraising - UTG-75bb HJ-45bb CO-60bb BU-30bb SB-18bb BB-22bb</a>
+				 <a href="ICM5.html" class="postSelect mdl-navigation__link">Coldcalling & 3betting - UTG-75bb HJ-45bb CO-60bb BU-30bb SB-18bb BB-22bb</a>
+				 <a href="ICM6.html" class="postSelect mdl-navigation__link">Openraising - UTG-75bb HJ-45bb CO-60bb BU-30bb SB-18bb BB-7bb</a>
+				 <a href="ICM7.html" class="postSelect mdl-navigation__link">Coldcalling & 3betting - UTG-75bb HJ-45bb CO-60bb BU-30bb SB-18bb BB-7bb</a>
+				 				<a href="ICM8.html" class="postSelect mdl-navigation__link">Openraising BU-80bb SB-40bb BB-55b</a>
+				<a href="ICM9.html" class="postSelect mdl-navigation__link">Coldcalling & 3B - BU-80bb SB-40bb BB-55bb</a>
+				<a href="ICM10.html" class="postSelect mdl-navigation__link">Openraising UTG-50bb HJ-25bb CO-11bb BU-55bb SB-9bb BB-13bb</a>
+				<a href="ICM11.html" class="postSelect mdl-navigation__link">Coldcalling & 3B UTG-50bb HJ-25bb CO-11bb BU-55bb SB-9bb BB-13bb</a>
+				<a href="ICM12.html" class="postSelect mdl-navigation__link">Coldcalling & 3B UTG-20bb HJ-35bb CO-15bb BU-8bb SB-50bb BB-15bb</a>
+				<a href="ICM13.html" class="postSelect mdl-navigation__link">Openraising - UTG-20bb HJ-45bb CO-60bb BU-35bb SB-18bb BB-75bb</a>
+				<a href="ICM14.html" class="postSelect mdl-navigation__link">Openraising - UTG-20bb HJ-35bb CO-15bb BU-8bb SB-50bb BB-15bb</a>
+				
+		   </div></div> </div>
+			 </span>
+        </nav>
+      </div>
+
+          <div class="android-content mdl-layout__content">
+<section class="mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-cell mdl-cell--12-col"><h6 id="selectedGroupTitle">ICM Ranges - Openraising - UTG-20bb HJ-35bb CO-15bb BU-8bb SB-50bb BB-15bb</h6>
+<a href="ICM14-sb50bb.html" class="myButton">SB 50bb</a><a href="ICM14-btn8bb-sb50bb.html" class="myButton2">BTN 8bb vs SB 50bb</a><a href="ICM14-btn8bb-bb15bb.html" class="myButton">BTN 8bb vs BB 15bb</a><a href="ICM14-co15bb-btn8bb.html" class="myButton">CO 15bb vs BTN 8bb</a><a href="ICM14-co15bb-sb50bb.html" class="myButton">CO 15bb vs SB 50bb</a><a href="ICM14-co15bb-bb15bb.html" class="myButton">CO 15bb vs BB 15bb</a><a href="ICM14-hj35bb-co15bb.html" class="myButton">HJ 35bb vs CO 15bb</a><a href="ICM14-hj35bb-btn8bb.html" class="myButton">HJ 35bb vs BTN 8bb</a><a href="ICM14-hj35bb-sb50bb.html" class="myButton">HJ 35bb vs SB 50bb</a><a href="ICM14-hj35bb-bb15bb.html" class="myButton">HJ 35bb vs BB 15bb</a><a href="ICM14-utg20bb-hj35bb.html" class="myButton">UTG 20bb vs HJ 35bb</a><a href="ICM14-utg20bb-co15bb.html" class="myButton">UTG 20bb vs CO 15bb</a><a href="ICM14-utg20bb-btn8bb.html" class="myButton">UTG 20bb vs BTN 8bb</a><a href="ICM14-utg20bb-sb50bb.html" class="myButton">UTG 20bb vs SB 50bb</a><a href="ICM14-utg20bb-bb15bb.html" class="myButton">UTG 20bb vs BB 15bb</a></div>
+		
+			<div id="tableContainer" class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+<table id="fullTable" class="table">
+
+<tbody><tr>
+
+    <td id="cid_AA" class="cell p mdl-color--green" style="opacity: 1;">AA</td>
+
+    <td id="cid_AKs" class="cell s mdl-color--green" style="opacity: 1;">AKs</td>
+
+    <td id="cid_AQs" class="cell s mdl-color--lime" style="opacity: 1;">AQs</td>
+
+    <td id="cid_AJs" class="cell s mdl-color--green" style="opacity: 1;">AJs</td>
+
+    <td id="cid_ATs" class="cell s mdl-color--lime" style="opacity: 1;">ATs</td>
+
+    <td id="cid_A9s" class="cell s mdl-color--lime" style="opacity: 1;">A9s</td>
+
+    <td id="cid_A8s" class="cell s mdl-color--lime" style="opacity: 1;">A8s</td>
+
+    <td id="cid_A7s" class="cell s" style="opacity: 1;"><div class="mdl-color--lime weighted" data-weight="50" data-hand="A7s" style="width: 50%; left: 50%;"></div><div class="mdl-color--green weighted" data-weight="50" data-hand="A7s" style="width: 50%; left: 0px; opacity: 1;"></div>A7s</td>
+
+    <td id="cid_A6s" class="cell s mdl-color--lime" style="opacity: 1;">A6s</td>
+
+    <td id="cid_A5s" class="cell s mdl-color--lime" style="opacity: 1;">A5s</td>
+
+    <td id="cid_A4s" class="cell s mdl-color--lime" style="opacity: 1;">A4s</td>
+
+    <td id="cid_A3s" class="cell s mdl-color--lime" style="opacity: 1;">A3s</td>
+
+    <td id="cid_A2s" class="cell s mdl-color--lime" style="opacity: 1;">A2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_AKo" class="cell o" style="opacity: 1;"><div class="mdl-color--lime weighted" data-weight="75" data-hand="AKo" style="width: 75%; left: 24%;"></div><div class="mdl-color--green weighted" data-weight="24" data-hand="AKo" style="width: 24%; left: 0px; opacity: 1;"></div>AKo</td>
+
+    <td id="cid_KK" class="cell p mdl-color--green" style="opacity: 1;">KK</td>
+
+    <td id="cid_KQs" class="cell s mdl-color--lime" style="opacity: 1;">KQs</td>
+
+    <td id="cid_KJs" class="cell s mdl-color--lime" style="opacity: 1;">KJs</td>
+
+    <td id="cid_KTs" class="cell s mdl-color--lime" style="opacity: 1;">KTs</td>
+
+    <td id="cid_K9s" class="cell s mdl-color--lime" style="opacity: 1;">K9s</td>
+
+    <td id="cid_K8s" class="cell s" style="opacity: 1;"><div class="mdl-color--blue weighted" data-weight="50" data-hand="K8s" style="width: 50%; left: 0px;"></div>K8s</td>
+
+    <td id="cid_K7s" class="cell s" style="opacity: 1;">K7s</td>
+
+    <td id="cid_K6s" class="cell s" style="opacity: 1;">K6s</td>
+
+    <td id="cid_K5s" class="cell s" style="opacity: 1;">K5s</td>
+
+    <td id="cid_K4s" class="cell s" style="opacity: 1;">K4s</td>
+
+    <td id="cid_K3s" class="cell s" style="opacity: 1;">K3s</td>
+
+    <td id="cid_K2s" class="cell s" style="opacity: 1;">K2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_AQo" class="cell o mdl-color--lime" style="opacity: 1;">AQo</td>
+
+    <td id="cid_KQo" class="cell o mdl-color--lime" style="opacity: 1;">KQo</td>
+
+    <td id="cid_QQ" class="cell p mdl-color--green" style="opacity: 1;">QQ</td>
+
+    <td id="cid_QJs" class="cell s mdl-color--lime" style="opacity: 1;">QJs</td>
+
+    <td id="cid_QTs" class="cell s mdl-color--lime" style="opacity: 1;">QTs</td>
+
+    <td id="cid_Q9s" class="cell s mdl-color--lime" style="opacity: 1;">Q9s</td>
+
+    <td id="cid_Q8s" class="cell s" style="opacity: 1;">Q8s</td>
+
+    <td id="cid_Q7s" class="cell s" style="opacity: 1;">Q7s</td>
+
+    <td id="cid_Q6s" class="cell s" style="opacity: 1;">Q6s</td>
+
+    <td id="cid_Q5s" class="cell s" style="opacity: 1;">Q5s</td>
+
+    <td id="cid_Q4s" class="cell s" style="opacity: 1;">Q4s</td>
+
+    <td id="cid_Q3s" class="cell s" style="opacity: 1;">Q3s</td>
+
+    <td id="cid_Q2s" class="cell s" style="opacity: 1;">Q2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_AJo" class="cell o mdl-color--lime" style="opacity: 1;">AJo</td>
+
+    <td id="cid_KJo" class="cell o mdl-color--lime" style="opacity: 1;">KJo</td>
+
+    <td id="cid_QJo" class="cell o mdl-color--lime" style="opacity: 1;">QJo</td>
+
+    <td id="cid_JJ" class="cell p mdl-color--green" style="opacity: 1;">JJ</td>
+
+    <td id="cid_JTs" class="cell s mdl-color--lime" style="opacity: 1;">JTs</td>
+
+    <td id="cid_J9s" class="cell s mdl-color--lime" style="opacity: 1;">J9s</td>
+
+    <td id="cid_J8s" class="cell s" style="opacity: 1;">J8s</td>
+
+    <td id="cid_J7s" class="cell s" style="opacity: 1;">J7s</td>
+
+    <td id="cid_J6s" class="cell s" style="opacity: 1;">J6s</td>
+
+    <td id="cid_J5s" class="cell s" style="opacity: 1;">J5s</td>
+
+    <td id="cid_J4s" class="cell s" style="opacity: 1;">J4s</td>
+
+    <td id="cid_J3s" class="cell s" style="opacity: 1;">J3s</td>
+
+    <td id="cid_J2s" class="cell s" style="opacity: 1;">J2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_ATo" class="cell o mdl-color--lime" style="opacity: 1;">ATo</td>
+
+    <td id="cid_KTo" class="cell o" style="opacity: 1;"><div class="mdl-color--blue weighted" data-weight="33" data-hand="KTo" style="width: 33%; left: 0px;"></div>KTo</td>
+
+    <td id="cid_QTo" class="cell o" style="opacity: 1;">QTo</td>
+
+    <td id="cid_JTo" class="cell o" style="opacity: 1;"><div class="mdl-color--lime weighted" data-weight="50" data-hand="JTo" style="width: 50%; left: 0px;"></div>JTo</td>
+
+    <td id="cid_TT" class="cell p mdl-color--lime" style="opacity: 1;">TT</td>
+
+    <td id="cid_T9s" class="cell s mdl-color--lime" style="opacity: 1;">T9s</td>
+
+    <td id="cid_T8s" class="cell s" style="opacity: 1;">T8s</td>
+
+    <td id="cid_T7s" class="cell s" style="opacity: 1;">T7s</td>
+
+    <td id="cid_T6s" class="cell s" style="opacity: 1;">T6s</td>
+
+    <td id="cid_T5s" class="cell s" style="opacity: 1;">T5s</td>
+
+    <td id="cid_T4s" class="cell s" style="opacity: 1;">T4s</td>
+
+    <td id="cid_T3s" class="cell s" style="opacity: 1;">T3s</td>
+
+    <td id="cid_T2s" class="cell s" style="opacity: 1;">T2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A9o" class="cell o mdl-color--lime" style="opacity: 1;">A9o</td>
+
+    <td id="cid_K9o" class="cell o" style="opacity: 1;">K9o</td>
+
+    <td id="cid_Q9o" class="cell o" style="opacity: 1;">Q9o</td>
+
+    <td id="cid_J9o" class="cell o" style="opacity: 1;">J9o</td>
+
+    <td id="cid_T9o" class="cell o" style="opacity: 1;">T9o</td>
+
+    <td id="cid_99" class="cell p mdl-color--lime" style="opacity: 1;">99</td>
+
+    <td id="cid_98s" class="cell s" style="opacity: 1;">98s</td>
+
+    <td id="cid_97s" class="cell s" style="opacity: 1;">97s</td>
+
+    <td id="cid_96s" class="cell s" style="opacity: 1;">96s</td>
+
+    <td id="cid_95s" class="cell s" style="opacity: 1;">95s</td>
+
+    <td id="cid_94s" class="cell s" style="opacity: 1;">94s</td>
+
+    <td id="cid_93s" class="cell s" style="opacity: 1;">93s</td>
+
+    <td id="cid_92s" class="cell s" style="opacity: 1;">92s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A8o" class="cell o mdl-color--lime" style="opacity: 1;">A8o</td>
+
+    <td id="cid_K8o" class="cell o" style="opacity: 1;">K8o</td>
+
+    <td id="cid_Q8o" class="cell o" style="opacity: 1;">Q8o</td>
+
+    <td id="cid_J8o" class="cell o" style="opacity: 1;">J8o</td>
+
+    <td id="cid_T8o" class="cell o" style="opacity: 1;">T8o</td>
+
+    <td id="cid_98o" class="cell o" style="opacity: 1;">98o</td>
+
+    <td id="cid_88" class="cell p mdl-color--lime" style="opacity: 1;">88</td>
+
+    <td id="cid_87s" class="cell s" style="opacity: 1;">87s</td>
+
+    <td id="cid_86s" class="cell s" style="opacity: 1;">86s</td>
+
+    <td id="cid_85s" class="cell s" style="opacity: 1;">85s</td>
+
+    <td id="cid_84s" class="cell s" style="opacity: 1;">84s</td>
+
+    <td id="cid_83s" class="cell s" style="opacity: 1;">83s</td>
+
+    <td id="cid_82s" class="cell s" style="opacity: 1;">82s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A7o" class="cell o mdl-color--lime" style="opacity: 1;">A7o</td>
+
+    <td id="cid_K7o" class="cell o" style="opacity: 1;">K7o</td>
+
+    <td id="cid_Q7o" class="cell o" style="opacity: 1;">Q7o</td>
+
+    <td id="cid_J7o" class="cell o" style="opacity: 1;">J7o</td>
+
+    <td id="cid_T7o" class="cell o" style="opacity: 1;">T7o</td>
+
+    <td id="cid_97o" class="cell o" style="opacity: 1;">97o</td>
+
+    <td id="cid_87o" class="cell o" style="opacity: 1;">87o</td>
+
+    <td id="cid_77" class="cell p mdl-color--lime" style="opacity: 1;">77</td>
+
+    <td id="cid_76s" class="cell s" style="opacity: 1;">76s</td>
+
+    <td id="cid_75s" class="cell s" style="opacity: 1;">75s</td>
+
+    <td id="cid_74s" class="cell s" style="opacity: 1;">74s</td>
+
+    <td id="cid_73s" class="cell s" style="opacity: 1;">73s</td>
+
+    <td id="cid_72s" class="cell s" style="opacity: 1;">72s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A6o" class="cell o" style="opacity: 1;"><div class="mdl-color--lime weighted" data-weight="25" data-hand="A6o" style="width: 25%; left: 75%;"></div><div class="mdl-color--blue weighted" data-weight="75" data-hand="A6o" style="width: 75%; left: 0px;"></div>A6o</td>
+
+    <td id="cid_K6o" class="cell o" style="opacity: 1;">K6o</td>
+
+    <td id="cid_Q6o" class="cell o" style="opacity: 1;">Q6o</td>
+
+    <td id="cid_J6o" class="cell o" style="opacity: 1;">J6o</td>
+
+    <td id="cid_T6o" class="cell o" style="opacity: 1;">T6o</td>
+
+    <td id="cid_96o" class="cell o" style="opacity: 1;">96o</td>
+
+    <td id="cid_86o" class="cell o" style="opacity: 1;">86o</td>
+
+    <td id="cid_76o" class="cell o" style="opacity: 1;">76o</td>
+
+    <td id="cid_66" class="cell p mdl-color--lime" style="opacity: 1;">66</td>
+
+    <td id="cid_65s" class="cell s" style="opacity: 1;">65s</td>
+
+    <td id="cid_64s" class="cell s" style="opacity: 1;">64s</td>
+
+    <td id="cid_63s" class="cell s" style="opacity: 1;">63s</td>
+
+    <td id="cid_62s" class="cell s" style="opacity: 1;">62s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A5o" class="cell o mdl-color--lime" style="opacity: 1;">A5o</td>
+
+    <td id="cid_K5o" class="cell o" style="opacity: 1;">K5o</td>
+
+    <td id="cid_Q5o" class="cell o" style="opacity: 1;">Q5o</td>
+
+    <td id="cid_J5o" class="cell o" style="opacity: 1;">J5o</td>
+
+    <td id="cid_T5o" class="cell o" style="opacity: 1;">T5o</td>
+
+    <td id="cid_95o" class="cell o" style="opacity: 1;">95o</td>
+
+    <td id="cid_85o" class="cell o" style="opacity: 1;">85o</td>
+
+    <td id="cid_75o" class="cell o" style="opacity: 1;">75o</td>
+
+    <td id="cid_65o" class="cell o" style="opacity: 1;">65o</td>
+
+    <td id="cid_55" class="cell p mdl-color--lime" style="opacity: 1;">55</td>
+
+    <td id="cid_54s" class="cell s" style="opacity: 1;">54s</td>
+
+    <td id="cid_53s" class="cell s" style="opacity: 1;">53s</td>
+
+    <td id="cid_52s" class="cell s" style="opacity: 1;">52s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A4o" class="cell o" style="opacity: 1;"><div class="mdl-color--lime weighted" data-weight="50" data-hand="A4o" style="width: 50%; left: 50%;"></div><div class="mdl-color--blue weighted" data-weight="50" data-hand="A4o" style="width: 50%; left: 0px;"></div>A4o</td>
+
+    <td id="cid_K4o" class="cell o" style="opacity: 1;">K4o</td>
+
+    <td id="cid_Q4o" class="cell o" style="opacity: 1;">Q4o</td>
+
+    <td id="cid_J4o" class="cell o" style="opacity: 1;">J4o</td>
+
+    <td id="cid_T4o" class="cell o" style="opacity: 1;">T4o</td>
+
+    <td id="cid_94o" class="cell o" style="opacity: 1;">94o</td>
+
+    <td id="cid_84o" class="cell o" style="opacity: 1;">84o</td>
+
+    <td id="cid_74o" class="cell o" style="opacity: 1;">74o</td>
+
+    <td id="cid_64o" class="cell o" style="opacity: 1;">64o</td>
+
+    <td id="cid_54o" class="cell o" style="opacity: 1;">54o</td>
+
+    <td id="cid_44" class="cell p mdl-color--lime" style="opacity: 1;">44</td>
+
+    <td id="cid_43s" class="cell s" style="opacity: 1;">43s</td>
+
+    <td id="cid_42s" class="cell s" style="opacity: 1;">42s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A3o" class="cell o" style="opacity: 1;"><div class="mdl-color--blue weighted" data-weight="60" data-hand="A3o" style="width: 60%; left: 0px;"></div>A3o</td>
+
+    <td id="cid_K3o" class="cell o" style="opacity: 1;">K3o</td>
+
+    <td id="cid_Q3o" class="cell o" style="opacity: 1;">Q3o</td>
+
+    <td id="cid_J3o" class="cell o" style="opacity: 1;">J3o</td>
+
+    <td id="cid_T3o" class="cell o" style="opacity: 1;">T3o</td>
+
+    <td id="cid_93o" class="cell o" style="opacity: 1;">93o</td>
+
+    <td id="cid_83o" class="cell o" style="opacity: 1;">83o</td>
+
+    <td id="cid_73o" class="cell o" style="opacity: 1;">73o</td>
+
+    <td id="cid_63o" class="cell o" style="opacity: 1;">63o</td>
+
+    <td id="cid_53o" class="cell o" style="opacity: 1;">53o</td>
+
+    <td id="cid_43o" class="cell o" style="opacity: 1;">43o</td>
+
+    <td id="cid_33" class="cell p mdl-color--lime" style="opacity: 1;">33</td>
+
+    <td id="cid_32s" class="cell s" style="opacity: 1;">32s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A2o" class="cell o" style="opacity: 1;"><div class="mdl-color--blue weighted" data-weight="50" data-hand="A2o" style="width: 50%; left: 0px;"></div>A2o</td>
+
+    <td id="cid_K2o" class="cell o" style="opacity: 1;">K2o</td>
+
+    <td id="cid_Q2o" class="cell o" style="opacity: 1;">Q2o</td>
+
+    <td id="cid_J2o" class="cell o" style="opacity: 1;">J2o</td>
+
+    <td id="cid_T2o" class="cell o" style="opacity: 1;">T2o</td>
+
+    <td id="cid_92o" class="cell o" style="opacity: 1;">92o</td>
+
+    <td id="cid_82o" class="cell o" style="opacity: 1;">82o</td>
+
+    <td id="cid_72o" class="cell o" style="opacity: 1;">72o</td>
+
+    <td id="cid_62o" class="cell o" style="opacity: 1;">62o</td>
+
+    <td id="cid_52o" class="cell o" style="opacity: 1;">52o</td>
+
+    <td id="cid_42o" class="cell o" style="opacity: 1;">42o</td>
+
+    <td id="cid_32o" class="cell o" style="opacity: 1;">32o</td>
+
+    <td id="cid_22" class="cell p mdl-color--lime" style="opacity: 1;">22</td>
+
+</tr>
+<tr><td colspan="13"><span class="selectedItems">26.2% of hands</span> <span class="totalCombos">(347) combos</span></td></tr>
+<tr><td colspan="13"><span class="notes">Vs All in we call QQ+ AK+</span></td></tr>
+</tbody></table>
+</div>
+	<div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+<ul class="mdl-list rangeBreakdown" style="">
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--green"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--green"><span class="title">Raise/call vs all in</span><div class="sectionCombos">3% (36 combos)</div></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--amber" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--amber"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--red" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--red"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--blue"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--blue"><span class="title">minraise/fold</span><div class="sectionCombos">3% (34 combos)</div></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--lime" style="display: flex;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--lime"><span class="title">Openshove All in</span><div class="sectionCombos">21% (276 combos)</div></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--cyan" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--cyan"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--brown" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--brown"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--grey" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--grey"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--teal" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--teal"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--indigo" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--indigo"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--purple" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--purple"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--pink" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--pink"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--light-green" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--light-green"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--orange" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--orange"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--deep-orange" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--deep-orange"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--deep-purple" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--deep-purple"></span></li>
+</ul>
+</div>
+			  
+			  </section>
+	  	    <script src="../scripts/jquery.min.js"></script>
+  <script src="../scripts/firebase-app.js"></script>
+  <script src="../scripts/firebase-auth.js"></script>
+  <script src="../scripts/firebase-database.js"></script>
+  <script src="../scripts/firebase-functions.js"></script>
+  <script src="../scripts/init.js"></script>
+<script type="text/javascript" src="../scripts/firebaseui.js"></script>
+<script src="../scripts/utils.js"></script>
+<script src="../scripts/viewer.js"></script>
+<!-- Latinize -->
+<script src="../scripts/latinize.js"></script>
+
+</body></html>

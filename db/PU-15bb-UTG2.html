@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+
+.myButton2 {
+	-moz-box-shadow: 0px 0px 15px -1px #695302;
+	-webkit-box-shadow: 0px 0px 15px -1px #695302;
+	box-shadow: 0px 0px 15px -1px #695302;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #ff0000));
+	background:-moz-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-webkit-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-o-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-ms-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:linear-gradient(to bottom, #ff0000 5%, #ff0000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff0000',GradientType=0);
+	background-color:#ff0000;
+	border:1px solid #ebbb1d;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	padding:1px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff0000;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #ff0000));
+	background:-moz-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-webkit-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-o-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-ms-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:linear-gradient(to bottom, #ff0000 5%, #ff0000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff0000',GradientType=0);
+	background-color:#ff0000;
+}.myButton2:active {
+	position:relative;
+	top:1px;
+}
+.myButton {
+	-moz-box-shadow: 0px 0px 3px -1px #695302;
+	-webkit-box-shadow: 0px 0px 3px -1px #695302;
+	box-shadow: 0px 0px 3px -1px #695302;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd640), color-stop(1, #ffd640));
+	background:-moz-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-webkit-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-o-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-ms-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:linear-gradient(to bottom, #ffd640 5%, #ffd640 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd640', endColorstr='#ffd640',GradientType=0);
+	background-color:#ffd640;
+	border:1px solid #ebbb1d;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	padding:1px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffd640;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd640), color-stop(1, #ffd640));
+	background:-moz-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-webkit-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-o-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-ms-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:linear-gradient(to bottom, #ffd640 5%, #ffd640 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd640', endColorstr='#ffd640',GradientType=0);
+	background-color:#ffd640;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="RYE - Expert Class">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crush With Us</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../scripts/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../scripts/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../scripts/favicon-16x16.png">
+
+      <!-- Schema.org markup for Google+ -->
+      <meta itemprop="name" content="CrushWithUs">
+      <meta itemprop="description" content="Range Viewer powered by RYE">
+      <meta itemprop="image" content="../scripts/CrushWithUs.png">
+
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="../scripts/CrushWithUs.png">
+      <meta name="twitter:site" content="@CrushWithRYE">
+      <meta name="twitter:title" content="Crush With Us">
+      <meta name="twitter:description" content="Range Viewer powered by RYE">
+      <meta name="twitter:creator" content="@CrushWithRYE">
+      <!-- Twitter summary card with large image must be at least 280x150px -->
+      <meta name="twitter:image:src" content="../scripts/CrushWithUs.png">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Crush With Us">
+      <meta property="og:type" content="article">
+      <meta property="og:url" content="#">
+      <meta property="og:image" content="../scripts/CrushWithUs.png">
+      <meta property="og:description" content="Range Viewer powered by RYE">
+      <meta property="og:site_name" content="Raise Your Edge">
+
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+      <!-- Web Application Manifest -->
+    <link rel="manifest" href="../scripts/manifest.json">
+
+    <!-- Add to home screen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Crush With Us">
+    <meta name="theme-color" content="#303F9F">
+    <link rel="icon" type="image/png" sizes="192x192" href="scripts/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="scripts/android-icon-128x128.png">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Raise Your Edge">
+      <link rel="apple-touch-icon" sizes="57x57" href="../scripts/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="../scripts/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../scripts/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="../scripts/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="../scripts/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="../scripts/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="../scripts/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="../scripts/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="../scripts/apple-icon-180x180.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff9800">
+
+    <!-- Tile icon for Win8 -->
+      <meta name="msapplication-TileColor" content="#ff9800">
+      <meta name="msapplication-TileImage" content="../scripts/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ff9800">
+      <!-- Firebase UI -->
+      <link type="text/css" rel="stylesheet" href="../scripts/firebaseui.css">
+
+  <!-- Material Design Lite  -->
+  <link rel="stylesheet" href="../scripts/material.min.css">
+  <script defer="" src="../scripts/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- SweetAlert -->
+    <script src="../sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../scripts/sweetalert.css">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth:700">
+  <link rel="stylesheet" href="../scripts/material.orange-amber.min.css">
+
+  <link rel="stylesheet" href="../scripts/viewer.css">
+
+  </head>
+  <body>
+<!-- Splash screen -->
+    <div class="mdl-layout__container"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer has-drawer is-upgraded" data-upgraded=",MaterialLayout">
+
+      <div class="android-header mdl-layout__header is-casting-shadow"><div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div>
+
+        <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">
+        <img src="../scripts/rye_black.png" height="35px">
+      </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+            </nav>
+          </div>
+
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons">keyboard_arrow_down</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(25px, 7px);"></span></span></button>
+          <div class="mdl-menu__container is-upgraded" style="right: 40px; top: 48px; width: 228.859px; height: 64px;"><div class="mdl-menu__outline mdl-menu--bottom-right" style="width: 228.859px; height: 64px;"></div><ul id="viewerSelect" class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="more-button" data-upgraded=",MaterialMenu,MaterialRipple" style="clip: rect(0px, 228.859px, 0px, 228.859px);"><li id="-L1Scg5OwqRQYBckli2W" class="selectViewer mdl-menu__item" style="">Tournament Masterclass Expert</li></ul></div>
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer" aria-hidden="true">
+         <nav class="mdl-navigation">
+           <span class="mdl-navigation__link viewerTitle">Tournament Masterclass Expert</span>
+           <span class="range-nav">
+		   <div class="mdl-accordion mdl-accordion--opened">
+		   <a href="OP-40BB-MENU.html" class="mdl-navigation__link mdl-accordion__button rangeTitle">
+		   <em class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</em>Openraising</a>
+           <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -224px;">
+		   <a id="-KnjqW10p7MH9868d__X" data-title="Openraising" href="OP-100BB-MENU.html" class="postSelect mdl-navigation__link">100bb</a>
+		   <a id="-KnjqW10p7MH9868d__X" data-title="Openraising" href="OP-60BB-MENU.html" class="postSelect mdl-navigation__link">60bb</a>
+	       	   <a id="-KnjqW10p7MH9868d__X" data-title="Openraising" href="OP-40BB-MENU.html" class="postSelect mdl-navigation__link">40bb</a>
+		   <a id="-KoIH1Ex-4dVB2kwqzbT" data-title="Openraising" href="OP-40BBMAIS-SB-STRATEGIES-MENU.html" class="postSelect mdl-navigation__link">40bb+ SB Strategies</a>
+		   <a id="-KnjqW10p7MH9868d__X" data-title="Openraising" href="OP-30BB-MENU.html" class="postSelect mdl-navigation__link">30bb</a>
+		   <a id="-KoIOfF8B8ZKOLO98bUe" data-title="Openraising" href="OP-20BB-MENU.html" class="postSelect mdl-navigation__link">20bb</a>
+		   <a id="-L48yg-2ihpUTmnJAIYd" data-title="Pushing" href="PU-menu-pushingranges15bb.html" class="postSelect mdl-navigation__link">Pushing 15bb</a>
+		   <a id="-KomHzwZcwQO-Vp1d3T4" data-title="Pushing" href="PU-menu-pushingranges10bb.html" class="postSelect mdl-navigation__link">Pushing 10bb</a>
+		   </div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="F3B-menu-100bb.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Flatting &amp; 3Betting</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -224px;">
+		   <a id="-KoJIT7KXKImP7VKR2YM" data-title="Flatting &amp; 3Betting" href="F3B-menu-100bb.html" class="postSelect mdl-navigation__link">50bb+</a>
+		   <a id="-KoNB0xtIFMSwPb0l18z" data-title="Flatting &amp; 3Betting" href="F3B-menu-40bb.html" class="postSelect mdl-navigation__link">40bb</a>
+		   <a id="-KoNKOOJ0PIjAElMiBTL" data-title="Flatting &amp; 3Betting" href="F3B-menu-30bb.html" class="postSelect mdl-navigation__link">30bb</a>
+		   <a id="-KoNPypy9CzIkvWyMnwW" data-title="Flatting &amp; 3Betting" href="F3B-menu-20bb.html" class="postSelect mdl-navigation__link">20bb</a></div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="RE-menu-sbvs.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Rejamming</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -336px;">
+		   <a id="-KoNjDwGvNpWDQFtDkNg" data-title="Rejamming" href="RE-menu-sbvs.html" class="postSelect mdl-navigation__link">SB vs</a>
+		   <a id="-KoNnsk2_IOWFhJDC5if" data-title="Rejamming" href="RE-menu-bbvs.html" class="postSelect mdl-navigation__link">BB vs</a>
+		   <a id="-KoNt0V7ATqCsfpLfmrc" data-title="Rejamming" href="RE-menu-buvs.html" class="postSelect mdl-navigation__link">BU vs</a>
+		   <a id="-KoNvvvqzCLbG9UaGYIH" data-title="Rejamming" href="RE-menu-covs.html" class="postSelect mdl-navigation__link">CO vs</a>
+		   <a id="-KoO4_XdM_x9tJW3Je3d" data-title="Rejamming" href="RE-menu-hjvs.html" class="postSelect mdl-navigation__link">HJ vs</a>
+		   <a id="-KoO5QEE5NVvGQ7fQO_x" data-title="Rejamming" href="RE-menu-mpvs.html" class="postSelect mdl-navigation__link">MP vs</a></div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="CALLRE-menu-buvs.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Calling Rejams</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -280px;">
+		   <a id="-KoO668GJjoeA-MCf9ME" data-title="Calling Rejams" href="CALLRE-menu-buvs.html" class="postSelect mdl-navigation__link">BU vs</a>
+		   <a id="-KoO6o8TP7mC1PVkHo6X" data-title="Calling Rejams" href="CALLRE-menu-sbvs.html" class="postSelect mdl-navigation__link">SB vs</a>
+		   <a id="-KoO7K0ZHPC7ssVeNRa7" data-title="Calling Rejams" href="CALLRE-menu-utgvs.html" class="postSelect mdl-navigation__link">UTG vs</a>
+		   <a id="-KoO8l5zGD1Xid9EnhTI" data-title="Calling Rejams" href="CALLRE-menu-covs.html" class="postSelect mdl-navigation__link">CO vs</a>
+		   <a id="-KqXZw2xejIv0P0lAl0B" data-title="Calling Rejams" href="CALLRE-menu-mpvs.html" class="postSelect mdl-navigation__link">MP vs</a></div></div></div>
+
+<div class="mdl-accordion">
+		    <a href="RESHOVING-menu.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Reshoving</a>
+		</div>
+		    <div class="mdl-accordion">
+		   <a href="OPENSHOVING-menu.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Openshoving</a>
+		</div>
+		   <div class="mdl-accordion">
+		   <a href="BBSTR-menu-vssblimp.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>BB Strategy</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -336px;">
+		   <a id="-KoNbItYIUEXKkMXUTE9" data-title="BB Strategy" href="BBSTR-menu-defending.html" class="postSelect mdl-navigation__link">Defending</a>
+		   <a id="-KoNg8m1AamornjarGpE" data-title="BB Strategy" href="BBSTR-menu-vssblimp.html" class="postSelect mdl-navigation__link">vs SB Limp</a>
+		   <a id="-KvZxLcJOuRmn4-02Rge" data-title="BB Strategy" href="BBSTR-menu-vsbuco.html" class="postSelect mdl-navigation__link">vs BU/CO</a>
+		   <a id="-Kv_-UJbWqzuNj7EPzkr" data-title="BB Strategy" href="BBSTR-menu-vsmpbuco.html" class="postSelect mdl-navigation__link">vs MP BU/CO</a>
+		   <a id="-Kv_2siTn0oTCxIkWeTX" data-title="BB Strategy" href="BBSTR-menu-vsepmultiway.html" class="postSelect mdl-navigation__link">vs EP multiway</a>
+		   <a id="-Kv_4iO8OHdkW7PQWJYy" data-title="BB Strategy" href="BBSTR-menu-defendvsep4way.html" class="postSelect mdl-navigation__link">Defend vs EP 4way+</a></div></div></div>
+		   <div class="mdl-accordion">
+		   
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -112px;">
+		   <a id="-KomHzwZcwQO-Vp1d3T4" data-title="Pushing" href="PU-menu-pushingranges10bb.html" class="postSelect mdl-navigation__link">Pushing Ranges 10bb</a>
+		   <a id="-L48yg-2ihpUTmnJAIYd" data-title="Pushing" href="PU-menu-pushingranges15bb.html" class="postSelect mdl-navigation__link"> Pushing Ranges 15bb</a></div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="HU-menu-menos25bbdosb.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>HU</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -224px;">
+		   <a id="-KpGDzh0lx9Nb4NvT_ld" data-title="HU" href="HU-menu-menos25bbdosb.html" class="postSelect mdl-navigation__link">&lt;25bb from SB</a>
+		   <a id="-KpGzc3NXdwVPlzlw11G" data-title="HU" href="HU-menu-25bbmaisdosb.html" class="postSelect mdl-navigation__link">25bb+ from SB</a>
+		   <a id="-KpLpHIJoDLjN6IETRh3" data-title="HU" href="HU-menu-menos25bboop.html" class="postSelect mdl-navigation__link">&lt;25bb OOP</a>
+		   <a id="-KpM2GwzBNFpnT_KYge9" data-title="HU" href="HU-menu-25bbmaisoop.html" class="postSelect mdl-navigation__link">25bb+ OOP</a></div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="SQU-menu-squezing40bbmais.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Squeezing</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -56px;">
+		   <a id="-L6g0ul4EV6Cz2gExTBg" data-title="Squeezing" href="SQU-menu-squezing40bbmais.html" class="postSelect mdl-navigation__link">Squeezing 40bb+</a></div></div></div>
+		   
+<div class="mdl-accordion">
+		   <a href="MUL-menu-100BB.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Multiway</a>
+		   </div>
+			<div class="mdl-accordion">
+		   <a href="ICM.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>ICM Ranges</a>
+	</div></span>
+        </nav>
+      </div>
+      <div class="android-content mdl-layout__content">
+<section class="mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-cell mdl-cell--12-col"><h6 id="selectedGroupTitle"> Pushing Ranges 15bb</h6></div>
+<div class="mdl-cell mdl-cell--12-col filters">
+  <p><a href="PU-15bb-SB.html" class="myButton">SB</a><a href="PU-15bb-BU.html" class="myButton">BTN</a><a href="PU-15bb-CO.html" class="myButton">CO</a><a href="PU-15bb-HJ.html" class="myButton">HJ</a><a href="PU-15bb-MP.html" class="myButton">MP</a><a href="PU-15bb-UTG2.html" class="myButton2">UTG+2</a><a href="PU-15bb-UTG1.html" class="myButton">UTG+1</a><a href="PU-15bb-UTG.html" class="myButton">UTG</a>&nbsp;</p>
+</div>
+
+<div id="tableContainer" class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+<table id="fullTable" class="table">
+
+<tbody><tr>
+
+    <td id="cid_AA" class="cell p mdl-color--red" style="opacity: 1;">AA</td>
+
+    <td id="cid_AKs" class="cell s mdl-color--red" style="opacity: 1;">AKs</td>
+
+    <td id="cid_AQs" class="cell s mdl-color--red" style="opacity: 1;">AQs</td>
+
+    <td id="cid_AJs" class="cell s mdl-color--red" style="opacity: 1;">AJs</td>
+
+    <td id="cid_ATs" class="cell s mdl-color--green" style="opacity: 1;">ATs</td>
+
+    <td id="cid_A9s" class="cell s mdl-color--lime" style="opacity: 1;">A9s</td>
+
+    <td id="cid_A8s" class="cell s mdl-color--lime" style="opacity: 1;">A8s</td>
+
+    <td id="cid_A7s" class="cell s mdl-color--lime" style="opacity: 1;">A7s</td>
+
+    <td id="cid_A6s" class="cell s mdl-color--lime" style="opacity: 1;">A6s</td>
+
+    <td id="cid_A5s" class="cell s mdl-color--lime" style="opacity: 1;">A5s</td>
+
+    <td id="cid_A4s" class="cell s mdl-color--lime" style="opacity: 1;">A4s</td>
+
+    <td id="cid_A3s" class="cell s" style="opacity: 1;">A3s</td>
+
+    <td id="cid_A2s" class="cell s" style="opacity: 1;">A2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_AKo" class="cell o mdl-color--red" style="opacity: 1;">AKo</td>
+
+    <td id="cid_KK" class="cell p mdl-color--red" style="opacity: 1;">KK</td>
+
+    <td id="cid_KQs" class="cell s mdl-color--red" style="opacity: 1;">KQs</td>
+
+    <td id="cid_KJs" class="cell s mdl-color--green" style="opacity: 1;">KJs</td>
+
+    <td id="cid_KTs" class="cell s mdl-color--lime" style="opacity: 1;">KTs</td>
+
+    <td id="cid_K9s" class="cell s mdl-color--lime" style="opacity: 1;">K9s</td>
+
+    <td id="cid_K8s" class="cell s mdl-color--lime" style="opacity: 1;">K8s</td>
+
+    <td id="cid_K7s" class="cell s" style="opacity: 1;">K7s</td>
+
+    <td id="cid_K6s" class="cell s" style="opacity: 1;">K6s</td>
+
+    <td id="cid_K5s" class="cell s" style="opacity: 1;">K5s</td>
+
+    <td id="cid_K4s" class="cell s" style="opacity: 1;">K4s</td>
+
+    <td id="cid_K3s" class="cell s" style="opacity: 1;">K3s</td>
+
+    <td id="cid_K2s" class="cell s" style="opacity: 1;">K2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_AQo" class="cell o mdl-color--green" style="opacity: 1;">AQo</td>
+
+    <td id="cid_KQo" class="cell o mdl-color--lime" style="opacity: 1;">KQo</td>
+
+    <td id="cid_QQ" class="cell p mdl-color--red" style="opacity: 1;">QQ</td>
+
+    <td id="cid_QJs" class="cell s mdl-color--lime" style="opacity: 1;">QJs</td>
+
+    <td id="cid_QTs" class="cell s mdl-color--lime" style="opacity: 1;">QTs</td>
+
+    <td id="cid_Q9s" class="cell s mdl-color--lime" style="opacity: 1;">Q9s</td>
+
+    <td id="cid_Q8s" class="cell s" style="opacity: 1;">Q8s</td>
+
+    <td id="cid_Q7s" class="cell s" style="opacity: 1;">Q7s</td>
+
+    <td id="cid_Q6s" class="cell s" style="opacity: 1;">Q6s</td>
+
+    <td id="cid_Q5s" class="cell s" style="opacity: 1;">Q5s</td>
+
+    <td id="cid_Q4s" class="cell s" style="opacity: 1;">Q4s</td>
+
+    <td id="cid_Q3s" class="cell s" style="opacity: 1;">Q3s</td>
+
+    <td id="cid_Q2s" class="cell s" style="opacity: 1;">Q2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_AJo" class="cell o mdl-color--amber" style="opacity: 1;">AJo</td>
+
+    <td id="cid_KJo" class="cell o mdl-color--lime" style="opacity: 1;">KJo</td>
+
+    <td id="cid_QJo" class="cell o" style="opacity: 1;"><div class="mdl-color--lime weighted" data-weight="50" data-hand="QJo" style="width: 50%; left: 0px;"></div>QJo</td>
+
+    <td id="cid_JJ" class="cell p mdl-color--red" style="opacity: 1;">JJ</td>
+
+    <td id="cid_JTs" class="cell s mdl-color--lime" style="opacity: 1;">JTs</td>
+
+    <td id="cid_J9s" class="cell s mdl-color--lime" style="opacity: 1;">J9s</td>
+
+    <td id="cid_J8s" class="cell s" style="opacity: 1;">J8s</td>
+
+    <td id="cid_J7s" class="cell s" style="opacity: 1;">J7s</td>
+
+    <td id="cid_J6s" class="cell s" style="opacity: 1;">J6s</td>
+
+    <td id="cid_J5s" class="cell s" style="opacity: 1;">J5s</td>
+
+    <td id="cid_J4s" class="cell s" style="opacity: 1;">J4s</td>
+
+    <td id="cid_J3s" class="cell s" style="opacity: 1;">J3s</td>
+
+    <td id="cid_J2s" class="cell s" style="opacity: 1;">J2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_ATo" class="cell o mdl-color--lime" style="opacity: 1;">ATo</td>
+
+    <td id="cid_KTo" class="cell o" style="opacity: 1;">KTo</td>
+
+    <td id="cid_QTo" class="cell o" style="opacity: 1;">QTo</td>
+
+    <td id="cid_JTo" class="cell o" style="opacity: 1;">JTo</td>
+
+    <td id="cid_TT" class="cell p mdl-color--red" style="opacity: 1;">TT</td>
+
+    <td id="cid_T9s" class="cell s mdl-color--lime" style="opacity: 1;">T9s</td>
+
+    <td id="cid_T8s" class="cell s" style="opacity: 1;">T8s</td>
+
+    <td id="cid_T7s" class="cell s" style="opacity: 1;">T7s</td>
+
+    <td id="cid_T6s" class="cell s" style="opacity: 1;">T6s</td>
+
+    <td id="cid_T5s" class="cell s" style="opacity: 1;">T5s</td>
+
+    <td id="cid_T4s" class="cell s" style="opacity: 1;">T4s</td>
+
+    <td id="cid_T3s" class="cell s" style="opacity: 1;">T3s</td>
+
+    <td id="cid_T2s" class="cell s" style="opacity: 1;">T2s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A9o" class="cell o" style="opacity: 1;">A9o</td>
+
+    <td id="cid_K9o" class="cell o" style="opacity: 1;">K9o</td>
+
+    <td id="cid_Q9o" class="cell o" style="opacity: 1;">Q9o</td>
+
+    <td id="cid_J9o" class="cell o" style="opacity: 1;">J9o</td>
+
+    <td id="cid_T9o" class="cell o" style="opacity: 1;">T9o</td>
+
+    <td id="cid_99" class="cell p mdl-color--red" style="opacity: 1;">99</td>
+
+    <td id="cid_98s" class="cell s" style="opacity: 1;">98s</td>
+
+    <td id="cid_97s" class="cell s" style="opacity: 1;">97s</td>
+
+    <td id="cid_96s" class="cell s" style="opacity: 1;">96s</td>
+
+    <td id="cid_95s" class="cell s" style="opacity: 1;">95s</td>
+
+    <td id="cid_94s" class="cell s" style="opacity: 1;">94s</td>
+
+    <td id="cid_93s" class="cell s" style="opacity: 1;">93s</td>
+
+    <td id="cid_92s" class="cell s" style="opacity: 1;">92s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A8o" class="cell o" style="opacity: 1;">A8o</td>
+
+    <td id="cid_K8o" class="cell o" style="opacity: 1;">K8o</td>
+
+    <td id="cid_Q8o" class="cell o" style="opacity: 1;">Q8o</td>
+
+    <td id="cid_J8o" class="cell o" style="opacity: 1;">J8o</td>
+
+    <td id="cid_T8o" class="cell o" style="opacity: 1;">T8o</td>
+
+    <td id="cid_98o" class="cell o" style="opacity: 1;">98o</td>
+
+    <td id="cid_88" class="cell p mdl-color--red" style="opacity: 1;">88</td>
+
+    <td id="cid_87s" class="cell s" style="opacity: 1;">87s</td>
+
+    <td id="cid_86s" class="cell s" style="opacity: 1;">86s</td>
+
+    <td id="cid_85s" class="cell s" style="opacity: 1;">85s</td>
+
+    <td id="cid_84s" class="cell s" style="opacity: 1;">84s</td>
+
+    <td id="cid_83s" class="cell s" style="opacity: 1;">83s</td>
+
+    <td id="cid_82s" class="cell s" style="opacity: 1;">82s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A7o" class="cell o" style="opacity: 1;">A7o</td>
+
+    <td id="cid_K7o" class="cell o" style="opacity: 1;">K7o</td>
+
+    <td id="cid_Q7o" class="cell o" style="opacity: 1;">Q7o</td>
+
+    <td id="cid_J7o" class="cell o" style="opacity: 1;">J7o</td>
+
+    <td id="cid_T7o" class="cell o" style="opacity: 1;">T7o</td>
+
+    <td id="cid_97o" class="cell o" style="opacity: 1;">97o</td>
+
+    <td id="cid_87o" class="cell o" style="opacity: 1;">87o</td>
+
+    <td id="cid_77" class="cell p mdl-color--green" style="opacity: 1;">77</td>
+
+    <td id="cid_76s" class="cell s" style="opacity: 1;">76s</td>
+
+    <td id="cid_75s" class="cell s" style="opacity: 1;">75s</td>
+
+    <td id="cid_74s" class="cell s" style="opacity: 1;">74s</td>
+
+    <td id="cid_73s" class="cell s" style="opacity: 1;">73s</td>
+
+    <td id="cid_72s" class="cell s" style="opacity: 1;">72s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A6o" class="cell o" style="opacity: 1;">A6o</td>
+
+    <td id="cid_K6o" class="cell o" style="opacity: 1;">K6o</td>
+
+    <td id="cid_Q6o" class="cell o" style="opacity: 1;">Q6o</td>
+
+    <td id="cid_J6o" class="cell o" style="opacity: 1;">J6o</td>
+
+    <td id="cid_T6o" class="cell o" style="opacity: 1;">T6o</td>
+
+    <td id="cid_96o" class="cell o" style="opacity: 1;">96o</td>
+
+    <td id="cid_86o" class="cell o" style="opacity: 1;">86o</td>
+
+    <td id="cid_76o" class="cell o" style="opacity: 1;">76o</td>
+
+    <td id="cid_66" class="cell p mdl-color--amber" style="opacity: 1;">66</td>
+
+    <td id="cid_65s" class="cell s" style="opacity: 1;">65s</td>
+
+    <td id="cid_64s" class="cell s" style="opacity: 1;">64s</td>
+
+    <td id="cid_63s" class="cell s" style="opacity: 1;">63s</td>
+
+    <td id="cid_62s" class="cell s" style="opacity: 1;">62s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A5o" class="cell o" style="opacity: 1;">A5o</td>
+
+    <td id="cid_K5o" class="cell o" style="opacity: 1;">K5o</td>
+
+    <td id="cid_Q5o" class="cell o" style="opacity: 1;">Q5o</td>
+
+    <td id="cid_J5o" class="cell o" style="opacity: 1;">J5o</td>
+
+    <td id="cid_T5o" class="cell o" style="opacity: 1;">T5o</td>
+
+    <td id="cid_95o" class="cell o" style="opacity: 1;">95o</td>
+
+    <td id="cid_85o" class="cell o" style="opacity: 1;">85o</td>
+
+    <td id="cid_75o" class="cell o" style="opacity: 1;">75o</td>
+
+    <td id="cid_65o" class="cell o" style="opacity: 1;">65o</td>
+
+    <td id="cid_55" class="cell p" style="opacity: 1;">55</td>
+
+    <td id="cid_54s" class="cell s" style="opacity: 1;">54s</td>
+
+    <td id="cid_53s" class="cell s" style="opacity: 1;">53s</td>
+
+    <td id="cid_52s" class="cell s" style="opacity: 1;">52s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A4o" class="cell o" style="opacity: 1;">A4o</td>
+
+    <td id="cid_K4o" class="cell o" style="opacity: 1;">K4o</td>
+
+    <td id="cid_Q4o" class="cell o" style="opacity: 1;">Q4o</td>
+
+    <td id="cid_J4o" class="cell o" style="opacity: 1;">J4o</td>
+
+    <td id="cid_T4o" class="cell o" style="opacity: 1;">T4o</td>
+
+    <td id="cid_94o" class="cell o" style="opacity: 1;">94o</td>
+
+    <td id="cid_84o" class="cell o" style="opacity: 1;">84o</td>
+
+    <td id="cid_74o" class="cell o" style="opacity: 1;">74o</td>
+
+    <td id="cid_64o" class="cell o" style="opacity: 1;">64o</td>
+
+    <td id="cid_54o" class="cell o" style="opacity: 1;">54o</td>
+
+    <td id="cid_44" class="cell p" style="opacity: 1;">44</td>
+
+    <td id="cid_43s" class="cell s" style="opacity: 1;">43s</td>
+
+    <td id="cid_42s" class="cell s" style="opacity: 1;">42s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A3o" class="cell o" style="opacity: 1;">A3o</td>
+
+    <td id="cid_K3o" class="cell o" style="opacity: 1;">K3o</td>
+
+    <td id="cid_Q3o" class="cell o" style="opacity: 1;">Q3o</td>
+
+    <td id="cid_J3o" class="cell o" style="opacity: 1;">J3o</td>
+
+    <td id="cid_T3o" class="cell o" style="opacity: 1;">T3o</td>
+
+    <td id="cid_93o" class="cell o" style="opacity: 1;">93o</td>
+
+    <td id="cid_83o" class="cell o" style="opacity: 1;">83o</td>
+
+    <td id="cid_73o" class="cell o" style="opacity: 1;">73o</td>
+
+    <td id="cid_63o" class="cell o" style="opacity: 1;">63o</td>
+
+    <td id="cid_53o" class="cell o" style="opacity: 1;">53o</td>
+
+    <td id="cid_43o" class="cell o" style="opacity: 1;">43o</td>
+
+    <td id="cid_33" class="cell p" style="opacity: 1;">33</td>
+
+    <td id="cid_32s" class="cell s" style="opacity: 1;">32s</td>
+
+</tr>
+
+<tr>
+
+    <td id="cid_A2o" class="cell o" style="opacity: 1;">A2o</td>
+
+    <td id="cid_K2o" class="cell o" style="opacity: 1;">K2o</td>
+
+    <td id="cid_Q2o" class="cell o" style="opacity: 1;">Q2o</td>
+
+    <td id="cid_J2o" class="cell o" style="opacity: 1;">J2o</td>
+
+    <td id="cid_T2o" class="cell o" style="opacity: 1;">T2o</td>
+
+    <td id="cid_92o" class="cell o" style="opacity: 1;">92o</td>
+
+    <td id="cid_82o" class="cell o" style="opacity: 1;">82o</td>
+
+    <td id="cid_72o" class="cell o" style="opacity: 1;">72o</td>
+
+    <td id="cid_62o" class="cell o" style="opacity: 1;">62o</td>
+
+    <td id="cid_52o" class="cell o" style="opacity: 1;">52o</td>
+
+    <td id="cid_42o" class="cell o" style="opacity: 1;">42o</td>
+
+    <td id="cid_32o" class="cell o" style="opacity: 1;">32o</td>
+
+    <td id="cid_22" class="cell p" style="opacity: 1;">22</td>
+
+</tr>
+<tr><td colspan="13"><span class="selectedItems">16.3% of hands</span> <span class="totalCombos">(216) combos</span></td></tr>
+<tr><td colspan="13"><span class="notes"></span></td></tr>
+</tbody></table>
+</div><div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+<ul class="mdl-list rangeBreakdown" style="">
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--green" style="display: flex;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--green"><span class="title">All in</span><div class="sectionCombos">2% (26 combos)</div></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--amber" style="display: flex;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--amber"><span class="title">Minraise/call vs blinds</span><div class="sectionCombos">1% (18 combos)</div></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--red" style="display: flex;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--red"><span class="title">Minraise/call vs all in</span><div class="sectionCombos">5% (70 combos)</div></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--blue" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--blue"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--lime" style="display: flex;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--lime"><span class="title">Minraise/fold</span><div class="sectionCombos">8% (102 combos)</div></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--cyan" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--cyan"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--brown" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--brown"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--grey" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--grey"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--teal" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--teal"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--indigo" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--indigo"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--purple" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--purple"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--pink" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--pink"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--light-green" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--light-green"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--orange" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--orange"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--deep-orange" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--deep-orange"></span></li>
+	<li class="mdl-list__item mdl-list__item--two-line mdl-color--deep-purple" style="display: none;"><span class="mdl-list__item-primary-content colorSelect" id="mdl-color--deep-purple"></span></li>
+</ul>
+</div>
+</section> <!-- End Table Section-->
+
+      </div>
+               <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section" style="margin-left:20%;">
+  
+      
+      
+    
+  </div>
+  <div class="mdl-mini-footer__right-section">
+      
+  </div>
+</footer>
+    <div class="mdl-layout__obfuscator"></div></div></div>
+<!--Grouping Name Modal -->
+<div id="sectionNameForm" class="mdl-card mdl-shadow--2dp" style="display: none">
+<div id="mdl-card__title">
+  <h3 class="mdl-card__title-text">Header Links</h3>
+</div>
+
+<div class="mdl-card__supporting-text">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+    <input class="mdl-textfield__input" type="text" id="groupingInput" autocomplete="off">
+    <label class="mdl-textfield__label" for="groupingInput">ie/ Openraising | Defending </label>
+  </div>
+</div>
+
+<div class="mdl-card__actions mdl-card--border">
+  <button class="mdl-button mdl-js-button" id="cancelGrouping" data-upgraded=",MaterialButton">Cancel</button>
+  <button class="mdl-button mdl-js-button mdl-button--primary" id="saveGrouping" data-upgraded=",MaterialButton">Add</button>
+</div>
+
+</div>
+    <!--Set Title -->
+    <div id="viewerTitle" class="mdl-card mdl-shadow--2dp" style="display: none">
+    <div id="mdl-card__title">
+      <h3 class="mdl-card__title-text">Viewer Title</h3>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+        <div class="mdl-textfield mdl-js-textfield is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="text" id="vtitleInput">
+            <label class="mdl-textfield__label" for="vtitleInput">Viewer Title</label>
+        </div>
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="mdl-button mdl-js-button" id="cancelViewer" data-upgraded=",MaterialButton">Cancel</button>
+      <button class="mdl-button mdl-js-button mdl-button--primary" id="saveViewerTitle" data-upgraded=",MaterialButton">Create</button>
+    </div>
+    </div>
+
+    <!--Select Post Modal -->
+    <div id="selectPostsForm" class="mdl-card mdl-shadow--2dp" style="display: none">
+    <div id="mdl-card__title">
+      <h3 class="mdl-card__title-text">Add Posts</h3>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded" data-upgraded=",MaterialTextfield">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="searchPosts" data-upgraded=",MaterialButton">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="searchPosts">
+          <label class="mdl-textfield__label" for="searchPosts">SearchPosts</label>
+        </div>
+      </div>
+        <ul class="viewerPostsList mdl-list">
+        </ul>
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="mdl-button mdl-js-button" id="cancelSearchPosts" data-upgraded=",MaterialButton">Cancel</button>
+      <button class="mdl-button mdl-js-button mdl-button--primary" id="doneAddingPosts" data-upgraded=",MaterialButton">Done</button>
+    </div>
+    </div>
+
+    <!--Manage Members Modal -->
+    <div id="manageMembersForm" class="mdl-card mdl-shadow--2dp" style="display: none">
+    <div id="mdl-card__title">
+      <h3 class="mdl-card__title-text">Viewer Members</h3>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded" data-upgraded=",MaterialTextfield">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="searchMembers" data-upgraded=",MaterialButton">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="searchMembers">
+          <label class="mdl-textfield__label" for="searchMembers">Search Members</label>
+        </div>
+      </div>
+        <ul class="membersList mdl-list">
+        </ul>
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="mdl-button mdl-js-button" id="cancelManageMembers" data-upgraded=",MaterialButton">Cancel</button>
+      <button class="mdl-button mdl-js-button mdl-button--primary" id="doneManagingMembers" data-upgraded=",MaterialButton">Done</button>
+    </div>
+    </div>
+
+  
+  <!-- jQuery -->
+  <script src="../scripts/jquery.min.js"></script>
+  <!-- Import and configure the Firebase SDK -->
+  <!-- Import and configure the Firebase SDK -->
+  <!--<script src="//www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>-->
+  <!-- Firebase App is always required and must be first -->
+  <script src="../scripts/firebase-app.js"></script>
+
+  <!-- Add additional services you want to use -->
+  <script src="../scripts/firebase-auth.js"></script>
+  <script src="../scripts/firebase-database.js"></script>
+  <!--<script src="/__/firebase/5.0.4/firebase-messaging.js"></script>-->
+  <script src="../scripts/firebase-functions.js"></script>
+
+  <!-- Comment out (or don't include) services you don't want to use -->
+  <!-- <script src="/__/firebase/5.0.4/firebase-storage.js"></script> -->
+
+  <script src="../scripts/init.js"></script>
+<!-- Firebase UI for Auth -->
+<script type="text/javascript" src="../scripts/firebaseui.js"></script>
+
+<script type="text/javascript">
+// FirebaseUI config.
+var signInFlow = 'popup';
+
+if (('standalone' in window.navigator) && window.navigator.standalone) {
+  signInFlow = 'redirect';
+}
+var uiConfig = {
+  'signInFlow': 'signInFlow',
+  'signInOptions': [
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+  ],
+    'signInSuccessURL': '/rangeview.html'
+  };
+  var firebaseUi = new firebaseui.auth.AuthUI(firebase.auth());
+    </script>
+
+<script src="../scripts/firebase.js"></script>
+<script src="../scripts/utils.js"></script>
+<script src="../scripts/viewer.js"></script>
+<!-- Latinize -->
+<script src="../scripts/latinize.js"></script>
+
+</body></html>

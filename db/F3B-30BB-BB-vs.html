@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+
+.myButton2 {
+	-moz-box-shadow: 0px 0px 15px -1px #695302;
+	-webkit-box-shadow: 0px 0px 15px -1px #695302;
+	box-shadow: 0px 0px 15px -1px #695302;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #ff0000));
+	background:-moz-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-webkit-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-o-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-ms-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:linear-gradient(to bottom, #ff0000 5%, #ff0000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff0000',GradientType=0);
+	background-color:#ff0000;
+	border:1px solid #ebbb1d;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	padding:1px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff0000;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #ff0000));
+	background:-moz-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-webkit-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-o-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:-ms-linear-gradient(top, #ff0000 5%, #ff0000 100%);
+	background:linear-gradient(to bottom, #ff0000 5%, #ff0000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff0000',GradientType=0);
+	background-color:#ff0000;
+}.myButton2:active {
+	position:relative;
+	top:1px;
+}
+.myButton {
+	-moz-box-shadow: 0px 0px 3px -1px #695302;
+	-webkit-box-shadow: 0px 0px 3px -1px #695302;
+	box-shadow: 0px 0px 3px -1px #695302;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd640), color-stop(1, #ffd640));
+	background:-moz-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-webkit-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-o-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-ms-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:linear-gradient(to bottom, #ffd640 5%, #ffd640 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd640', endColorstr='#ffd640',GradientType=0);
+	background-color:#ffd640;
+	border:1px solid #ebbb1d;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	padding:1px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffd640;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd640), color-stop(1, #ffd640));
+	background:-moz-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-webkit-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-o-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:-ms-linear-gradient(top, #ffd640 5%, #ffd640 100%);
+	background:linear-gradient(to bottom, #ffd640 5%, #ffd640 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd640', endColorstr='#ffd640',GradientType=0);
+	background-color:#ffd640;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="RYE - Expert Class">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crush With Us</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../scripts/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../scripts/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../scripts/favicon-16x16.png">
+
+      <!-- Schema.org markup for Google+ -->
+      <meta itemprop="name" content="CrushWithUs">
+      <meta itemprop="description" content="Range Viewer powered by RYE">
+      <meta itemprop="image" content="../scripts/CrushWithUs.png">
+
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="../scripts/CrushWithUs.png">
+      <meta name="twitter:site" content="@CrushWithRYE">
+      <meta name="twitter:title" content="Crush With Us">
+      <meta name="twitter:description" content="Range Viewer powered by RYE">
+      <meta name="twitter:creator" content="@CrushWithRYE">
+      <!-- Twitter summary card with large image must be at least 280x150px -->
+      <meta name="twitter:image:src" content="../scripts/CrushWithUs.png">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Crush With Us">
+      <meta property="og:type" content="article">
+      <meta property="og:url" content="#">
+      <meta property="og:image" content="../scripts/CrushWithUs.png">
+      <meta property="og:description" content="Range Viewer powered by RYE">
+      <meta property="og:site_name" content="Raise Your Edge">
+
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+      <!-- Web Application Manifest -->
+    <link rel="manifest" href="../scripts/manifest.json">
+
+    <!-- Add to home screen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Crush With Us">
+    <meta name="theme-color" content="#303F9F">
+    <link rel="icon" type="image/png" sizes="192x192" href="scripts/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="scripts/android-icon-128x128.png">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Raise Your Edge">
+      <link rel="apple-touch-icon" sizes="57x57" href="../scripts/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="../scripts/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../scripts/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="../scripts/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="../scripts/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="../scripts/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="../scripts/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="../scripts/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="../scripts/apple-icon-180x180.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff9800">
+
+    <!-- Tile icon for Win8 -->
+      <meta name="msapplication-TileColor" content="#ff9800">
+      <meta name="msapplication-TileImage" content="../scripts/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ff9800">
+      <!-- Firebase UI -->
+      <link type="text/css" rel="stylesheet" href="../scripts/firebaseui.css">
+
+  <!-- Material Design Lite  -->
+  <link rel="stylesheet" href="../scripts/material.min.css">
+  <script defer="" src="../scripts/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- SweetAlert -->
+    <script src="../sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../scripts/sweetalert.css">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth:700">
+  <link rel="stylesheet" href="../scripts/material.orange-amber.min.css">
+
+  <link rel="stylesheet" href="../scripts/viewer.css">
+
+  </head>
+  <body>
+<!-- Splash screen -->
+    <div class="mdl-layout__container"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer has-drawer is-upgraded" data-upgraded=",MaterialLayout">
+
+      <div class="android-header mdl-layout__header is-casting-shadow"><div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div>
+
+        <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">
+        <img src="../scripts/rye_black.png" height="35px">
+      </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+            </nav>
+          </div>
+
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons">keyboard_arrow_down</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(28px, 23px);"></span></span></button>
+          <div class="mdl-menu__container is-upgraded" style="right: 40px; top: 48px; width: 228.859px; height: 64px;"><div class="mdl-menu__outline mdl-menu--bottom-right" style="width: 228.859px; height: 64px;"></div><ul id="viewerSelect" class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="more-button" data-upgraded=",MaterialMenu,MaterialRipple" style="clip: rect(0px, 228.859px, 0px, 228.859px);"><li id="-L1Scg5OwqRQYBckli2W" class="selectViewer mdl-menu__item" style="">Tournament Masterclass Expert</li></ul></div>
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer" aria-hidden="true">
+         <nav class="mdl-navigation">
+           <span class="mdl-navigation__link viewerTitle">Tournament Masterclass Expert</span>
+           <span class="range-nav">
+		   <div class="mdl-accordion">
+		   <a href="OP-100BB-MENU.html" class="mdl-navigation__link mdl-accordion__button rangeTitle">
+		   <em class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</em>Openraising</a>
+           <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -224px;">
+		   <a id="-KnjqW10p7MH9868d__X" data-title="Openraising" href="OP-100BB-MENU.html" class="postSelect mdl-navigation__link">100BB</a>
+		   <a id="-KoIH1Ex-4dVB2kwqzbT" data-title="Openraising" href="OP-40BBMAIS-SB-STRATEGIES-MENU.html" class="postSelect mdl-navigation__link">40bb+ SB Strategies</a>
+		   <a id="-KoIOfF8B8ZKOLO98bUe" data-title="Openraising" href="OP-30bb-MENU.html" class="postSelect mdl-navigation__link">30bb</a>
+		   <a id="-KoIUp-un0qCUYAwJN66" data-title="Openraising" href="OP-20bb-MENU.html" class="postSelect mdl-navigation__link">20bb</a></div></div></div>
+		   <div class="mdl-accordion mdl-accordion--opened">
+		   <a href="F3B-menu-100bb.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Flatting &amp; 3Betting</a>
+		      <div class="mdl-accordion mdl-accordion--opened">
+		   <a href  class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>30bb</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <a id="-KoNjDwGvNpWDQFtDkNg" data-title="Flatting&3betting"  href="F3B-30BB-BB-vs.html" class="postSelect mdl-navigation__link">BB vs</a>
+		   <a id="-KoNnsk2_IOWFhJDC5if" data-title="Flatting&3betting"  href="F3B-30BB-SB-vs.html" class="postSelect mdl-navigation__link">SB vs</a>
+		   <a id="-KoNt0V7ATqCsfpLfmrc" data-title="Flatting&3betting"  href="F3B-30BB-BTN-vs.html" class="postSelect mdl-navigation__link">BU vs</a>
+		   <a id="-KoNvvvqzCLbG9UaGYIH" data-title="Flatting&3betting"  href="F3B-30BB-CO-vs.html" class="postSelect mdl-navigation__link">CO vs</a>
+		   <a id="-KoO4_XdM_x9tJW3Je3d" data-title="Flatting&3betting"  href="F3B-30BB-HJ-vs.html" class="postSelect mdl-navigation__link">HJ vs</a>
+		   <a id="-KoO5QEE5NVvGQ7fQO_x" data-title="Flatting&3betting"  href="F3B-30BB-MP-vs.html" class="postSelect mdl-navigation__link">MP vs</a>
+		     <a id="-KoO4_XdM_x9tJW3Je3d" data-title="Flatting&3betting"  href="F3B-100BB-UTG2-vs.html" class="postSelect mdl-navigation__link">UTG2 vs</a>
+		    <a id="-KoO4_XdM_x9tJW3Je3d" data-title="Flatting&3betting"  href="F3B-30BB-UTG1-vs.html" class="postSelect mdl-navigation__link">UTG1 vs</a>
+		   </div></div></div>
+
+		   <div class="mdl-accordion">
+		   <a href="RE-menu-sbvs.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Rejamming</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -336px;">
+		   <a id="-KoNjDwGvNpWDQFtDkNg" data-title="Rejamming" href="RE-menu-sbvs.html" class="postSelect mdl-navigation__link">SB vs</a>
+		   <a id="-KoNnsk2_IOWFhJDC5if" data-title="Rejamming" href="RE-menu-bbvs.html" class="postSelect mdl-navigation__link">BB vs</a>
+		   <a id="-KoNt0V7ATqCsfpLfmrc" data-title="Rejamming" href="RE-menu-buvs.html" class="postSelect mdl-navigation__link">BU vs</a>
+		   <a id="-KoNvvvqzCLbG9UaGYIH" data-title="Rejamming" href="RE-menu-covs.html" class="postSelect mdl-navigation__link">CO vs</a>
+		   <a id="-KoO4_XdM_x9tJW3Je3d" data-title="Rejamming" href="RE-menu-hjvs.html" class="postSelect mdl-navigation__link">HJ vs</a>
+		   <a id="-KoO5QEE5NVvGQ7fQO_x" data-title="Rejamming" href="RE-menu-mpvs.html" class="postSelect mdl-navigation__link">MP vs</a></div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="CALLRE-menu-buvs.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Calling Rejams</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -280px;">
+		   <a id="-KoO668GJjoeA-MCf9ME" data-title="Calling Rejams" href="CALLRE-menu-buvs.html" class="postSelect mdl-navigation__link">BU vs</a>
+		   <a id="-KoO6o8TP7mC1PVkHo6X" data-title="Calling Rejams" href="CALLRE-menu-sbvs.html" class="postSelect mdl-navigation__link">SB vs</a>
+		   <a id="-KoO7K0ZHPC7ssVeNRa7" data-title="Calling Rejams" href="CALLRE-menu-utgvs.html" class="postSelect mdl-navigation__link">UTG vs</a>
+		   <a id="-KoO8l5zGD1Xid9EnhTI" data-title="Calling Rejams" href="CALLRE-menu-covs.html" class="postSelect mdl-navigation__link">CO vs</a>
+		   <a id="-KqXZw2xejIv0P0lAl0B" data-title="Calling Rejams" href="CALLRE-menu-mpvs.html" class="postSelect mdl-navigation__link">MP vs</a></div></div></div>
+
+<div class="mdl-accordion">
+		    <a href="RESHOVING-menu.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Reshoving</a>
+		</div>
+		    <div class="mdl-accordion">
+		   <a href="OPENSHOVING-menu.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Openshoving</a>
+		</div>
+		   <div class="mdl-accordion">
+		   <a href="BBSTR-menu-vssblimp.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>BB Strategy</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -336px;">
+		   <a id="-KoNbItYIUEXKkMXUTE9" data-title="BB Strategy" href="BBSTR-menu-defending.html" class="postSelect mdl-navigation__link">Defending</a>
+		   <a id="-KoNg8m1AamornjarGpE" data-title="BB Strategy" href="BBSTR-menu-vssblimp.html" class="postSelect mdl-navigation__link">vs SB Limp</a>
+		   <a id="-KvZxLcJOuRmn4-02Rge" data-title="BB Strategy" href="BBSTR-menu-vsbuco.html" class="postSelect mdl-navigation__link">vs BU/CO</a>
+		   <a id="-Kv_-UJbWqzuNj7EPzkr" data-title="BB Strategy" href="BBSTR-menu-vsmpbuco.html" class="postSelect mdl-navigation__link">vs MP BU/CO</a>
+		   <a id="-Kv_2siTn0oTCxIkWeTX" data-title="BB Strategy" href="BBSTR-menu-vsepmultiway.html" class="postSelect mdl-navigation__link">vs EP multiway</a>
+		   <a id="-Kv_4iO8OHdkW7PQWJYy" data-title="BB Strategy" href="BBSTR-menu-defendvsep4way.html" class="postSelect mdl-navigation__link">Defend vs EP 4way+</a></div></div></div>
+		   <div class="mdl-accordion">
+		   
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -112px;">
+		   <a id="-KomHzwZcwQO-Vp1d3T4" data-title="Pushing" href="PU-menu-pushingranges10bb.html" class="postSelect mdl-navigation__link">Pushing Ranges 10bb</a>
+		   <a id="-L48yg-2ihpUTmnJAIYd" data-title="Pushing" href="PU-menu-pushingranges15bb.html" class="postSelect mdl-navigation__link">Pushing Ranges 15bb</a></div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="HU-menu-menos25bbdosb.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>HU</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -224px;">
+		   <a id="-KpGDzh0lx9Nb4NvT_ld" data-title="HU" href="HU-menu-menos25bbdosb.html" class="postSelect mdl-navigation__link">&lt;25bb from SB</a>
+		   <a id="-KpGzc3NXdwVPlzlw11G" data-title="HU" href="HU-menu-25bbmaisdosb.html" class="postSelect mdl-navigation__link">25bb+ from SB</a>
+		   <a id="-KpLpHIJoDLjN6IETRh3" data-title="HU" href="HU-menu-menos25bboop.html" class="postSelect mdl-navigation__link">&lt;25bb OOP</a>
+		   <a id="-KpM2GwzBNFpnT_KYge9" data-title="HU" href="HU-menu-25bbmaisoop.html" class="postSelect mdl-navigation__link">25bb+ OOP</a></div></div></div>
+		   <div class="mdl-accordion">
+		   <a href="SQU-menu-squezing40bbmais.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Squeezing</a>
+		   <div class="mdl-accordion__content-wrapper">
+		   <div class="mdl-accordion__content mdl-animation--default" style="margin-top: -56px;">
+		   <a id="-L6g0ul4EV6Cz2gExTBg" data-title="Squeezing" href="SQU-menu-squezing40bbmais.html" class="postSelect mdl-navigation__link">Squeezing 40bb+</a></div></div></div>
+		   
+		   <div class="mdl-accordion">
+		   <a href="MUL-menu-100BB.html" class="mdl-navigation__link mdl-accordion__button rangeTitle"><i class="material-icons mdl-accordion__icon mdl-animation--default">expand_more</i>Multiway</a>
+		   </div></span>
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+<section class="mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-cell mdl-cell--12-col"><h6 id="selectedGroupTitle">Flatting &amp; 3Betting</h6>
+<a href="F3B-20BB-BB-vs.html" class="myButton">20bb</a><a href="F3B-30BB-BB-vs.html" class="myButton2">30bb</a><a href="F3B-40BB-BB-vs.html" class="myButton">40bb</a><a href="F3B-50BB-BB-vs.html" class="myButton">50bb</a><a href="F3B-100BB-BB-vs.html" class="myButton">100bb</a></div>
+	<div class="mdl-cell mdl-cell--12-col filters">
+  <a href="F3B-30BB-BB-vs-SB.html" class="myButton">BB VS SB</a><a href="F3B-30BB-BB-vs-BTN.html" class="myButton">BB VS BU</a><a href="F3B-30BB-BB-vs-CO.html" class="myButton">BB VS CO</a><a href="F3B-30BB-BB-vs-HJ.html" class="myButton">BB VS HJ</a><a href="F3B-30BB-BB-vs-MP.html" class="myButton">BB VS MP</a><a href="F3B-30BB-BB-vs-UTG.html" class="myButton">BB VS UTG</a></p>
+</div>
+
+
+</section> <!-- End Table Section-->
+
+      </div>
+               <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section" style="margin-left:20%;">
+      
+      
+    
+  </div>
+  <div class="mdl-mini-footer__right-section">
+      
+  </div>
+</footer>
+    <div class="mdl-layout__obfuscator"></div></div></div>
+<!--Grouping Name Modal -->
+<div id="sectionNameForm" class="mdl-card mdl-shadow--2dp" style="display: none">
+<div id="mdl-card__title">
+  <h3 class="mdl-card__title-text">Header Links</h3>
+</div>
+
+<div class="mdl-card__supporting-text">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+    <input class="mdl-textfield__input" type="text" id="groupingInput" autocomplete="off">
+    <label class="mdl-textfield__label" for="groupingInput">ie/ Openraising | Defending </label>
+  </div>
+</div>
+
+<div class="mdl-card__actions mdl-card--border">
+  <button class="mdl-button mdl-js-button" id="cancelGrouping" data-upgraded=",MaterialButton">Cancel</button>
+  <button class="mdl-button mdl-js-button mdl-button--primary" id="saveGrouping" data-upgraded=",MaterialButton">Add</button>
+</div>
+
+</div>
+    <!--Set Title -->
+    <div id="viewerTitle" class="mdl-card mdl-shadow--2dp" style="display: none">
+    <div id="mdl-card__title">
+      <h3 class="mdl-card__title-text">Viewer Title</h3>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+        <div class="mdl-textfield mdl-js-textfield is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="text" id="vtitleInput">
+            <label class="mdl-textfield__label" for="vtitleInput">Viewer Title</label>
+        </div>
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="mdl-button mdl-js-button" id="cancelViewer" data-upgraded=",MaterialButton">Cancel</button>
+      <button class="mdl-button mdl-js-button mdl-button--primary" id="saveViewerTitle" data-upgraded=",MaterialButton">Create</button>
+    </div>
+    </div>
+
+    <!--Select Post Modal -->
+    <div id="selectPostsForm" class="mdl-card mdl-shadow--2dp" style="display: none">
+    <div id="mdl-card__title">
+      <h3 class="mdl-card__title-text">Add Posts</h3>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded" data-upgraded=",MaterialTextfield">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="searchPosts" data-upgraded=",MaterialButton">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="searchPosts">
+          <label class="mdl-textfield__label" for="searchPosts">SearchPosts</label>
+        </div>
+      </div>
+        <ul class="viewerPostsList mdl-list">
+        </ul>
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="mdl-button mdl-js-button" id="cancelSearchPosts" data-upgraded=",MaterialButton">Cancel</button>
+      <button class="mdl-button mdl-js-button mdl-button--primary" id="doneAddingPosts" data-upgraded=",MaterialButton">Done</button>
+    </div>
+    </div>
+
+    <!--Manage Members Modal -->
+    <div id="manageMembersForm" class="mdl-card mdl-shadow--2dp" style="display: none">
+    <div id="mdl-card__title">
+      <h3 class="mdl-card__title-text">Viewer Members</h3>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded" data-upgraded=",MaterialTextfield">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="searchMembers" data-upgraded=",MaterialButton">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="searchMembers">
+          <label class="mdl-textfield__label" for="searchMembers">Search Members</label>
+        </div>
+      </div>
+        <ul class="membersList mdl-list">
+        </ul>
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="mdl-button mdl-js-button" id="cancelManageMembers" data-upgraded=",MaterialButton">Cancel</button>
+      <button class="mdl-button mdl-js-button mdl-button--primary" id="doneManagingMembers" data-upgraded=",MaterialButton">Done</button>
+    </div>
+    </div>
+
+  
+  <!-- jQuery -->
+  <script src="../scripts/jquery.min.js"></script>
+  <!-- Import and configure the Firebase SDK -->
+  <!-- Import and configure the Firebase SDK -->
+  <!--<script src="//www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>-->
+  <!-- Firebase App is always required and must be first -->
+  <script src="../scripts/firebase-app.js"></script>
+
+  <!-- Add additional services you want to use -->
+  <script src="../scripts/firebase-auth.js"></script>
+  <script src="../scripts/firebase-database.js"></script>
+  <!--<script src="/__/firebase/5.0.4/firebase-messaging.js"></script>-->
+  <script src="../scripts/firebase-functions.js"></script>
+
+  <!-- Comment out (or don't include) services you don't want to use -->
+  <!-- <script src="/__/firebase/5.0.4/firebase-storage.js"></script> -->
+
+  <script src="../scripts/init.js"></script>
+<!-- Firebase UI for Auth -->
+<script type="text/javascript" src="../scripts/firebaseui.js"></script>
+
+<script type="text/javascript">
+// FirebaseUI config.
+var signInFlow = 'popup';
+
+if (('standalone' in window.navigator) && window.navigator.standalone) {
+  signInFlow = 'redirect';
+}
+var uiConfig = {
+  'signInFlow': 'signInFlow',
+  'signInOptions': [
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+  ],
+    'signInSuccessURL': '/rangeview.html'
+  };
+  var firebaseUi = new firebaseui.auth.AuthUI(firebase.auth());
+    </script>
+
+<script src="../scripts/firebase.js"></script>
+<script src="../scripts/utils.js"></script>
+<script src="../scripts/viewer.js"></script>
+<!-- Latinize -->
+<script src="../scripts/latinize.js"></script>
+
+</body></html>
